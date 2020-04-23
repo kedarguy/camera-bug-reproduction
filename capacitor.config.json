@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "camera-bug-reproduction",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}

@@ -1,5 +1,7 @@
 {
   "name": "camera-bug-reproduction",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "react"
 }

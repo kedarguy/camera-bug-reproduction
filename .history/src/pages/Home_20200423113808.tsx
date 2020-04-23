@@ -6,12 +6,9 @@ import {
   IonToolbar,
   IonButton
 } from "@ionic/react";
-import { Plugins, CameraResultType, CameraDirection } from "@capacitor/core";
-
 import React from "react";
+import ExploreContainer from "../components/ExploreContainer";
 import "./Home.css";
-
-const { Camera } = Plugins;
 
 const Home: React.FC = () => {
   return (
@@ -28,20 +25,8 @@ const Home: React.FC = () => {
           </IonToolbar>
         </IonHeader>
         <IonButton
-          onClick={async () => {
+          onClick={() => {
             console.log("clicked");
-            try {
-              const image = await Camera.getPhoto({
-                quality: 60,
-                allowEditing: false,
-                width: 300,
-                direction: CameraDirection.Front,
-                resultType: CameraResultType.Base64
-              });
-              console.log("succesfuly got image", image);
-            } catch (error) {
-              console.log("error: ", error);
-            }
           }}
         >
           Get Photo
